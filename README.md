@@ -1,3 +1,36 @@
+
+# fw-fanctrl-windows.
+
+I want to replica the original Linux fw-fanctrl on windows. Use python and '?'.
+
+
+[DHowett/FrameworkWindowsUtils (github.com)](https://github.com/DHowett/FrameworkWindowsUtils)
+
+[TamtamHero/fw-fanctrl: A simple systemd service to better control Framework Laptop&#39;s fan(s) (github.com)](https://github.com/TamtamHero/fw-fanctrl)
+
+[Dustin L. Howett / ectool · GitLab](https://gitlab.howett.net/DHowett/ectool)
+
+## Changes
+
+add ectool.exe to /bin
+
+
+## Current progress
+
+**ectool not working**
+
+```
+fw-fanctrl-windows\bin>ectool.exe fanduty 50
+ioctl errno 6, EC result 255 (<unknown>)
+ioctl errno 6, EC result 255 (<unknown>)
+ioctl errno 6, EC result 255 (<unknown>)
+ioctl errno 6, EC result 255 (<unknown>)
+ioctl errno 6, EC result 255 (<unknown>)
+```
+
+
+# *The following is the original Repo description.*
+
 # fw-fanctrl
 
 This is a simple Python service for Linux that drives Framework Laptop's fan(s) speed according to a configurable speed/temp curve.
@@ -12,6 +45,7 @@ It is compatible with all kinds of 13" and 16" models, both AMD/Intel CPUs and w
 ## Dependancies
 
 This tool depends on `lm-sensors` to fetch CPU temperature:
+
 ```
 sudo apt install lm-sensors
 yes | sudo sensors-detect
@@ -20,6 +54,7 @@ yes | sudo sensors-detect
 To communicate with the embedded controller the `fw-ectool` is needed. You can either use the pre-compiled executable of `fw-ectool` in this repo, or recompile one from [this repo](https://gitlab.howett.net/DHowett/ectool) and copy it in `./bin`.
 
 Then run:
+
 ```
 sudo ./install.sh
 ```
@@ -32,6 +67,7 @@ It will copy `fanctrl.py` (to an executable file `fw-fanctrl`) and `./bin/ectool
 To install an update, you can just pull the latest commit on the `main` branch of this repository, and run the install script again.
 
 # Uninstall
+
 ```
 sudo ./install.sh remove
 ```
@@ -51,18 +87,16 @@ Strategies can be configured with the following parameters:
 
 - **SpeedCurve**:
 
-    This is the curve points for `f(temperature) = fan speed`
+  This is the curve points for `f(temperature) = fan speed`
 
-    `fw-fanctrl` measures the CPU temperature, compute a moving average of it, and then find an appropriate `fan speed` value by interpolation on the curve.
-
+  `fw-fanctrl` measures the CPU temperature, compute a moving average of it, and then find an appropriate `fan speed` value by interpolation on the curve.
 - **FanSpeedUpdateFrequency**:
 
-    Time interval between every update to the fan's speed. `fw-fanctrl` measures temperature every second and add it to its moving average, but the actual update to fan speed is made every 5s by default. This is for comfort, otherwise the speed is changed too often and it is noticeable and annoying, especially at low speed.
-    For a more reactive fan, you can lower this setting.
-
+  Time interval between every update to the fan's speed. `fw-fanctrl` measures temperature every second and add it to its moving average, but the actual update to fan speed is made every 5s by default. This is for comfort, otherwise the speed is changed too often and it is noticeable and annoying, especially at low speed.
+  For a more reactive fan, you can lower this setting.
 - **MovingAverageInterval**:
 
-    Number of seconds on which the moving average of temperature is computed. Increase it, and the fan speed will change more gradually. Lower it, and it will gain in reactivity. Defaults to 30 seconds.
+  Number of seconds on which the moving average of temperature is computed. Increase it, and the fan speed will change more gradually. Lower it, and it will gain in reactivity. Defaults to 30 seconds.
 
 ## Charging/Discharging strategies
 
@@ -74,7 +108,9 @@ The default path can be overwritten by entering a value for `batteryChargingStat
 # Misc
 
 It is possible to hot swap the current strategy with another one by running the command
+
 ```
 fw-fanctrl strategyName
 ```
+
 where `strategyName is one of the strategies described in the config file.
