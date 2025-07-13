@@ -26,13 +26,6 @@ This fork finishes wzqvip's **[project](https://github.com/wzqvip/fw-fanctrl-win
 3.  Double-click the `.exe` to run it. Windows will ask for **Administrator permission**, which is required for the application to control the hardware fans.
 4.  A new fan icon will appear in your system tray. **Right-click the icon** to select your desired fan mode. Please be patient, as it may take a few seconds for a new curve to apply.
 
-### Running on Startup (Optional)
-
-To make the fan controller start automatically when you log in:
-1.  Press `Win + R` to open the Run dialog.
-2.  Type `shell:startup` and press Enter. This will open your personal Startup folder.
-3.  Create a shortcut to `Framework-Fan-Control.exe` and place it in this folder.
-
 ## Configuration
 
 You can fully customize the fan behavior by editing the `config.json` file with a text editor.
