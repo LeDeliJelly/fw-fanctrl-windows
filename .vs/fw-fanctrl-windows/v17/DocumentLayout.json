@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\Framework Fan Control.spec||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Framework Fan Control.spec||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\dist\\Framework Fan Control.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dist\\Framework Fan Control.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\LICENSE||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LICENSE||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\fanctrl.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fanctrl.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\ectool.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ectool.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Framework Fan Control.exe",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\dist\\Framework Fan Control.exe",
+              "RelativeDocumentMoniker": "dist\\Framework Fan Control.exe",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\dist\\Framework Fan Control.exe",
+              "RelativeToolTip": "dist\\Framework Fan Control.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2025-07-13T08:10:26.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-13T08:06:55.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LICENSE",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\LICENSE",
+              "RelativeDocumentMoniker": "LICENSE",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\LICENSE",
+              "RelativeToolTip": "LICENSE",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-13T07:59:34.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\requirements.txt",
+              "RelativeDocumentMoniker": "requirements.txt",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\requirements.txt",
+              "RelativeToolTip": "requirements.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-13T06:41:54.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-07-13T06:41:53.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Framework Fan Control.spec",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\Framework Fan Control.spec",
+              "RelativeDocumentMoniker": "Framework Fan Control.spec",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\Framework Fan Control.spec",
+              "RelativeToolTip": "Framework Fan Control.spec",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-13T06:40:56.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ectool.exe",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\ectool.exe",
+              "RelativeDocumentMoniker": "ectool.exe",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\ectool.exe",
+              "RelativeToolTip": "ectool.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2025-07-13T05:09:05.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "config.json",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\config.json",
+              "RelativeDocumentMoniker": "config.json",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\config.json",
+              "RelativeToolTip": "config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-13T04:58:27.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "fanctrl.py",
+              "DocumentMoniker": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\fanctrl.py",
+              "RelativeDocumentMoniker": "fanctrl.py",
+              "ToolTip": "C:\\Users\\Yul Park\\source\\repos\\fw-fanctrl-windows\\fanctrl.py",
+              "RelativeToolTip": "fanctrl.py",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAcBAAAhAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANASURBVEhLtZVPaBxlGMZ/s7uTNazZMW3Y/BGxRFOkWsQU3VAPxoJ6KiKIItJDwTnkomhhK\u002BRg7En3losHFwlBRDx5KGgPHhQruhKaUChaiCbWuNrGtttunN3Z\u002Bb7v9TCb7GTI6HrwgZf55nln3ud9n\u002B9jBv5PiIgV51zXlTj3L3i0Uqksxclt7CkwPz8fp/fE7Oxs4Pv\u002BlSAIXq5UKtV4HiAVJ/4LHMexS6XSPtu2P3JdtxjP808C1Wo1MaIoFAqDEZEju5J7wXVd8Tyvp5ibm9tZr62t3ZiZmVl1Xfe\u002BaL3ECXpFuVymXC6zuLg4mE6nR4DD0XwmehNF3IooisXQ7lKptItfWFhYWllZ2cUlTlAsFveMqakpbNvG0xYb9TbrN1rcbBoymQyO42TjdRInSMJtz\u002Bedcz\u002Bwvnkbr\u002BmjlUKrgOF8ljMvPP3I8vKyHX0\u002BcYL4ydmO9bpif86m/OJkp3gYv27e4uzSL9np6emD0TqJAnFrtsMY4Zsff\u002BfUh99itMZoFV6VYstrMTAwcGe0TqIAgNYarTVWKsXSlS0\u002B/r7GhbU/efLQCEcPFnjq8Bh2GrRWaK0xxvDEZP1NaXwuElw7LyL7Evcgeorq\u002BQk\u002B\u002BHJ1x\u002B\u002BuNeHadO6NGPC\u002BDl9qXXqcoVNvJU4QteXcxVqny7DT7rrLGa2YGAYQ0C1oXQZ19dlEgSg2NhuYTqdGKdJiODCUY3w4z/hInvtHHZ47Os5LR34C5YFugvagXbs38WsatejdaoAKArQKuHuwn/dP\u002BPTLatgthNegBmoLjA\u002BmDdqHkdPJmxy1aCyfxXSsmDmWoz/4CtRvoGoQbID/MwS3Op03u1P03XMzUSCKYw\u002BN7mymc4fqJkwQWqE6haPr7ATYo5/2ZBFAM3\u002BA2vUGxx9uUpBPQgtMG/oOgZUFUeGHIZUD0nDXM9fIDD2WKBBHKpXCsiz6zGW4/l5Y3Pig2yAajECuCGOn3wbOA1XLsho9WQRgjEFrjZCWrtcdW/a/AkMnIdUPgGVZX1iW1SDpnxznonjj9dcuPVD47kHqn4Ui21PkJglGz7TtrPO8ZVln4\u002B/1DBFJi8irohor8tdFJVsXRNp/rItIVUROiMjx6PN/A\u002BOzH72MzdOgAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-07-12T21:40:56.503Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

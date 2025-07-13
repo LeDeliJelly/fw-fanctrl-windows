@@ -1,116 +1,64 @@
+# Framework Fan Control for Windows
 
-# fw-fanctrl-windows.
+This is a fully-featured Windows port and continuation of the original `fw-fanctrl` project, providing a simple and powerful way to manage your Framework Laptop's fan behavior. It runs as a clean, standalone tray application.
 
-I want to replica the original Linux fw-fanctrl on windows. Use python and '?'.
+This fork fixes and modernizes the project after the original author stopped development.
 
+![Application Screenshot](pic1.png)
 
-[DHowett/FrameworkWindowsUtils (github.com)](https://github.com/DHowett/FrameworkWindowsUtils)
+## Features
 
-[TamtamHero/fw-fanctrl: A simple systemd service to better control Framework Laptop&#39;s fan(s) (github.com)](https://github.com/TamtamHero/fw-fanctrl)
+*   **System Tray Control:** Runs silently in the system tray. Right-click the icon to get a full menu of fan modes.
+*   **Customizable Fan Curves:** All fan strategies are defined in a simple `config.json` file. You can easily edit them or add your own, from completely silent to full performance.
+*   **True Automatic Mode:** The "Automatic (Built-in)" option instantly and reliably hands fan control back to the laptop's default firmware.
+*   **Remembers Your Last Setting:** The application saves your last used strategy (including "Automatic") and loads it the next time it starts.
+*   **Safe by Design:** Automatically restores the default system fan control when the application is closed, ensuring your laptop is never left without proper thermal management.
+*   **Standalone Application:** Packaged as a single `.exe` file that requires no installation of Python or any other dependencies.
 
-[Dustin L. Howett / ectool · GitLab](https://gitlab.howett.net/DHowett/ectool)
+## Compatibility
 
-## Changes
+*   **Laptops:** Framework Laptop 13 and 16 (All variants, Intel and AMD)
+*   **Operating System:** Windows 10 (64-bit) and Windows 11 (64-bit)
 
-add ectool.exe to /bin
+## Installation & Usage
 
+1.  Go to the **Releases** page of this repository.
+2.  Download the latest `Framework-Fan-Control.exe` from the "Assets" section.
+3.  Place the `.exe` file in a permanent location on your computer (e.g., in a folder like `C:\Program Files\FrameworkFanControl`).
+4.  Double-click the `.exe` to run it. Windows will ask for **Administrator permission**, which is required for the application to control the hardware fans.
+5.  A new fan icon will appear in your system tray. **Right-click the icon** to select your desired fan mode. Please be patient, as it may take a few seconds for a new curve to apply.
 
-## Current progress
+### Running on Startup (Optional)
 
-**ectool not working**
+To make the fan controller start automatically when you log in:
+1.  Press `Win + R` to open the Run dialog.
+2.  Type `shell:startup` and press Enter. This will open your personal Startup folder.
+3.  Create a shortcut to `Framework-Fan-Control.exe` and place it in this folder.
 
-```
-fw-fanctrl-windows\bin>ectool.exe fanduty 50
-ioctl errno 6, EC result 255 (<unknown>)
-ioctl errno 6, EC result 255 (<unknown>)
-ioctl errno 6, EC result 255 (<unknown>)
-ioctl errno 6, EC result 255 (<unknown>)
-ioctl errno 6, EC result 255 (<unknown>)
-```
+## Configuration
 
+You can fully customize the fan behavior by editing the `config.json` file with a text editor.
 
-# *The following is the original Repo description.*
+*   `"defaultStrategy"`: The name of the fan curve that will be loaded by default when the application first runs.
+*   `"strategies"`: A list of all available fan curves. You can edit the `speedCurve` points for any strategy or create entirely new ones. Each point maps a `temp` (in Celsius) to a fan `speed` (in percent).
 
-# fw-fanctrl
+## Future Plans
 
-This is a simple Python service for Linux that drives Framework Laptop's fan(s) speed according to a configurable speed/temp curve.
-Its default configuration targets very silent fan operation, but it's easy to configure it for a different comfort/performance trade-off.
-Its possible to specify two separate fan curves depending on whether the Laptop is charging/discharging.
-Under the hood, it uses [ectool](https://gitlab.howett.net/DHowett/ectool) to change parameters in FrameWork's embedded controller (EC).
+*   Improve the user interface.
+*   Add support for creating and saving custom fan curves directly from the UI.
+*   Include a built-in option to have the application launch on startup.
 
-It is compatible with all kinds of 13" and 16" models, both AMD/Intel CPUs and with or without discrete GPU.
+## Acknowledgements & Licensing
 
-# Install
+This project would not be possible without the foundational work of others.
 
-## Dependancies
+*   This project is a continuation of the work started by **wzqvip**.
+*   The original concept and fan logic is based on **[fw-fanctrl](https://github.com/TamtamHero/fw-fanctrl)** by **TamtamHero**.
+*   Hardware communication is handled by **[ectool](https://github.com/DHowett/FrameworkWindowsUtils)** by **DHowett**.
+*   Temperature sensing is provided by the **[LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor)** library, which is licensed under the Mozilla Public License 2.0.
 
-This tool depends on `lm-sensors` to fetch CPU temperature:
+This application is distributed under the **MIT License**.
 
-```
-sudo apt install lm-sensors
-yes | sudo sensors-detect
-```
+## Disclaimer
 
-To communicate with the embedded controller the `fw-ectool` is needed. You can either use the pre-compiled executable of `fw-ectool` in this repo, or recompile one from [this repo](https://gitlab.howett.net/DHowett/ectool) and copy it in `./bin`.
-
-Then run:
-
-```
-sudo ./install.sh
-```
-
-This bash script is going to create and enable a service that runs this repo's main script, `fanctrl.py`.
-It will copy `fanctrl.py` (to an executable file `fw-fanctrl`) and `./bin/ectool` to `/usr/local/bin` and create a config file in `/home/<user>/.config/fw-fanctrl/config.json`
-
-# Update
-
-To install an update, you can just pull the latest commit on the `main` branch of this repository, and run the install script again.
-
-# Uninstall
-
-```
-sudo ./install.sh remove
-```
-
-# Configuration
-
-There is a single `config.json` file where you can configure the service. You need to run the install script again after editing this config, or you can directly edit the installed config at `/home/<user>/.config/fw-fanctrl/config.json` and restart the service with:
-
-```
-sudo service fw-fanctrl restart
-```
-
-It contains different strategies, ranked from the most silent to the noisiest. It is possible to specify two different strategies for charging/discharging allowing for different optimization goals. On discharging one could have fan curve optimized for low fan speeds in order to save power while accepting a bit more heat. On charging one could have a fan curve that focuses on keeping the CPU from throttling and the system cool, at the expense of fan noise.
-You can add new strategies, and if you think you have one that deserves to be shared, feel free to make a PR to this repo :)
-
-Strategies can be configured with the following parameters:
-
-- **SpeedCurve**:
-
-  This is the curve points for `f(temperature) = fan speed`
-
-  `fw-fanctrl` measures the CPU temperature, compute a moving average of it, and then find an appropriate `fan speed` value by interpolation on the curve.
-- **FanSpeedUpdateFrequency**:
-
-  Time interval between every update to the fan's speed. `fw-fanctrl` measures temperature every second and add it to its moving average, but the actual update to fan speed is made every 5s by default. This is for comfort, otherwise the speed is changed too often and it is noticeable and annoying, especially at low speed.
-  For a more reactive fan, you can lower this setting.
-- **MovingAverageInterval**:
-
-  Number of seconds on which the moving average of temperature is computed. Increase it, and the fan speed will change more gradually. Lower it, and it will gain in reactivity. Defaults to 30 seconds.
-
-## Charging/Discharging strategies
-
-The strategy active by default is the one specified in the `defaultStrategy` entry. Optionally a separate strategy only active during discharge can be defined, using the `strategyOnDischarging` entry. By default no extra strategy for discharging is provided, the default stratgy is active during all times.
-The charging status of the battery is fetched from the following file by default:
-`/sys/class/power_supply/BAT1/status`
-The default path can be overwritten by entering a value for `batteryChargingStatusPath` inside the `config.json` file.
-
-# Misc
-
-It is possible to hot swap the current strategy with another one by running the command
-
-```
-fw-fanctrl strategyName
-```
-
-where `strategyName is one of the strategies described in the config file.
+This software modifies your laptop's fan control system. Use it at your own risk. While it is designed to be safe, the author is not responsible for any potential damage to your hardware.
