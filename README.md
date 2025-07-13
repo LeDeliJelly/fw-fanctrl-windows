@@ -50,7 +50,7 @@ You can fully customize the fan behavior by editing the `config.json` file with 
 
 This project would not be possible without the foundational work of others.
 
-*   This project is a continuation of the work started by **wzqvip**.
+*   This project is a completion of the **[fw-fanctrl-windows](https://github.com/wzqvip/fw-fanctrl-windows)** started by **wzqvip**.
 *   The original concept and fan logic is based on **[fw-fanctrl](https://github.com/TamtamHero/fw-fanctrl)** by **TamtamHero**.
 *   Hardware communication is handled by **[ectool](https://github.com/DHowett/FrameworkWindowsUtils)** by **DHowett**.
 *   Temperature sensing is provided by the **[LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor)** library, which is licensed under the Mozilla Public License 2.0.
