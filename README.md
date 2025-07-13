@@ -23,9 +23,8 @@ This fork finishes wzqvip's **[project](https://github.com/wzqvip/fw-fanctrl-win
 
 1.  Go to the **Releases** page of this repository.
 2.  Download the latest `Framework-Fan-Control.exe` from the "Assets" section.
-3.  Place the `.exe` file in a permanent location on your computer.
-4.  Double-click the `.exe` to run it. Windows will ask for **Administrator permission**, which is required for the application to control the hardware fans.
-5.  A new fan icon will appear in your system tray. **Right-click the icon** to select your desired fan mode. Please be patient, as it may take a few seconds for a new curve to apply.
+3.  Double-click the `.exe` to run it. Windows will ask for **Administrator permission**, which is required for the application to control the hardware fans.
+4.  A new fan icon will appear in your system tray. **Right-click the icon** to select your desired fan mode. Please be patient, as it may take a few seconds for a new curve to apply.
 
 ### Running on Startup (Optional)
 
