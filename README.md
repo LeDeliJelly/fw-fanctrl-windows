@@ -2,7 +2,7 @@
 
 This is a fully-featured Windows port and continuation of the original `fw-fanctrl` project, providing a simple and powerful way to manage your Framework Laptop's fan behavior. It runs as a clean, standalone tray application.
 
-This fork finishes the original author's project because they stopped development.
+This fork finishes wzqvip's **[project](https://github.com/DHowett/FrameworkWindowsUtils](https://github.com/wzqvip/fw-fanctrl-windows)** because they stopped development.
 
 ![Application Screenshot](pic1.png)
 
