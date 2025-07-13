@@ -22,7 +22,8 @@ This fork finishes wzqvip's **[project](https://github.com/wzqvip/fw-fanctrl-win
 ## Installation & Usage
 
 Make sure test signing is enabled (which requires secure boot to be disabled)
-bcdedit /set {default} testsigning on
+
+`bcdedit /set {default} testsigning on`
 
 1.  Go to the **Releases** page of this repository.
 2.  Download the latest `Framework-Fan-Control.exe` from the "Assets" section.
